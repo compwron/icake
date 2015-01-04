@@ -1,5 +1,4 @@
 describe FindHighestProduct do
-	it "finds" do
-		
-	end
+  it 'finds' do
+  end
 end

@@ -20,13 +20,12 @@ b = [84, 12, 28, 21]
 # a = [1, 2, 6, 5, 9]
 # b = [540, 270, 90, 108, 60]
 
-def foo input
-	input.map {|i| input.reject{ |j| j == i}.inject(:*) }
+def foo(input)
+  input.map { |i| input.reject { |j| j == i }.inject(:*) }
 end
 
 if foo(a) == b
-	puts "works"
+  puts 'works'
 else
-	puts "nope. got #{b} instead of #{a}"
+  puts "nope. got #{b} instead of #{a}"
 end
-

@@ -5,12 +5,12 @@
 a = [1, 2, 3, 4]
 b = 24
 
-def foo input
-	input.combination(3).to_a.map {|slice| slice.inject(:*)}.max
+def foo(input)
+  input.combination(3).to_a.map { |slice| slice.inject(:*) }.max
 end
 
 if foo(a) == b
-	puts "works"
+  puts 'works'
 else
-	puts "nope. got #{a} instead of #{b}"
+  puts "nope. got #{a} instead of #{b}"
 end
