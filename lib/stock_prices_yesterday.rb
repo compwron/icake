@@ -23,3 +23,12 @@ if stockPricesYesterday[a.first] == a.last
 else
   puts "nope. got #{b.first} instead of #{a.first}"
 end
+
+# Answer:
+#   min_price = stockPricesYesterday[0]
+# max_profit = 0
+# for time in range(len(stockPricesYesterday)):
+#     current_price = stockPricesYesterday[time]
+#     min_price = min(min_price, current_price)
+#     max_profit = max(max_profit, current_price - min_price)
+# return max_profit
